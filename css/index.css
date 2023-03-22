@@ -135,3 +135,65 @@ header .navbar form input[type='search'] {
 }
 
 /* home section end */
+
+/* menu section end */
+
+#menu{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#menu .upper{
+    text-align: center;
+}
+
+#menu .upper h1{
+    margin: 0 0 20px 0;
+}
+
+#menu .middle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    margin: 40px 80px;
+}
+
+#menu .middle img{
+    width: 70%;
+}
+
+#menu .lower{
+    text-align: center;
+}
+
+#menu .lower a {
+    color: white ;
+    padding: 10px 20px;
+    background-color: black;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+
+/* menu section end */
+
+/* custom scrollbar start */
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+background-color: black;
+}
+
+::-webkit-scrollbar-thumb{
+background-clip: content-box;
+background-color: white;
+border-radius: 5px;
+border: 2px solid blue;
+}
