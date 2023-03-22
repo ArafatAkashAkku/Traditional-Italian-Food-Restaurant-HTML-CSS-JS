@@ -1,4 +1,5 @@
-/* css reset */
+/* css reset start */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +9,9 @@
     box-sizing: border-box;
 }
 
+/* css reset end */
+
+/* header start */
 
 header {
     height: 10vh;
@@ -51,6 +55,9 @@ header .navbar form input[type='search'] {
     border: 1px solid white;
 }
 
+/* header end */
+
+/* home section start */
 
 #home {
     display: flex;
@@ -74,7 +81,6 @@ header .navbar form input[type='search'] {
     margin: 0 0 20px 0;
 }
 
-
 #home .left h1 {
     color: white;
     margin: 0 0 20px 0;
@@ -93,7 +99,6 @@ header .navbar form input[type='search'] {
     text-transform: uppercase;
     border-radius: 20px;
 }
-
 
 #home .left p {
     color: white;
@@ -121,3 +126,12 @@ header .navbar form input[type='search'] {
     position: absolute;
     bottom: 0;
 }
+
+#home .right .leaf-image{
+    position: absolute;
+    bottom: -7%;
+    width: 21%;
+    right: 13%;
+}
+
+/* home section end */
