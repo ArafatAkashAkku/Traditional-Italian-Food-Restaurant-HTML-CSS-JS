@@ -13,7 +13,7 @@
 
 /* html start */
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -286,6 +286,65 @@ header .navbar form input[type='search'] {
 }
 
 /* discount section end */
+
+/* pizza section start */
+
+#pizza {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/Home-Background.jpg');
+    background-size: cover;
+    position: relative;
+    padding: 20px;
+}
+
+#pizza .leaf-two-side {
+    position: absolute;
+    top: -25%;
+    width: 100%;
+}
+
+#pizza .upper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 34px;
+}
+
+#pizza .middle {
+    width: 10%;
+    height: 10px;
+    background-color: white;
+}
+
+#pizza .lower {
+    text-align: end;
+    position: relative;
+    height: 50vh;
+}
+
+#pizza .lower .image-one {
+    width: 50%;
+    position: relative;
+    bottom: -25%;
+}
+
+#pizza .lower .image-two {
+    width: 27%;
+    position: absolute;
+    position: absolute;
+    bottom: -57%;
+    left: 39%;
+}
+
+/* pizza section end */
 
 
 /* custom scrollbar start */
