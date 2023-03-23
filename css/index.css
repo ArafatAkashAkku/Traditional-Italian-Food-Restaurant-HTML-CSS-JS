@@ -11,12 +11,20 @@
 
 /* css reset end */
 
+/* html start */
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* html end */
+
 /* header start */
 
 header {
     height: 10vh;
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 1000;
 }
@@ -105,11 +113,11 @@ header .navbar form input[type='search'] {
 
 }
 
-#home .right{
+#home .right {
     width: 60%;
 }
 
-#home .right .large-image{
+#home .right .large-image {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,16 +126,16 @@ header .navbar form input[type='search'] {
     position: relative;
 }
 
-#home .right .large-image img{
+#home .right .large-image img {
     width: 60%;
 }
 
-#home .right .small-image{
+#home .right .small-image {
     position: absolute;
     bottom: 0;
 }
 
-#home .right .leaf-image{
+#home .right .leaf-image {
     position: absolute;
     bottom: -7%;
     width: 21%;
@@ -138,7 +146,7 @@ header .navbar form input[type='search'] {
 
 /* menu section end */
 
-#menu{
+#menu {
     width: 100%;
     height: 90vh;
     display: flex;
@@ -146,15 +154,15 @@ header .navbar form input[type='search'] {
     justify-content: center;
 }
 
-#menu .upper{
+#menu .upper {
     text-align: center;
 }
 
-#menu .upper h1{
+#menu .upper h1 {
     margin: 0 0 20px 0;
 }
 
-#menu .middle{
+#menu .middle {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -163,16 +171,16 @@ header .navbar form input[type='search'] {
     margin: 40px 80px;
 }
 
-#menu .middle img{
+#menu .middle img {
     width: 70%;
 }
 
-#menu .lower{
+#menu .lower {
     text-align: center;
 }
 
 #menu .lower a {
-    color: white ;
+    color: white;
     padding: 10px 20px;
     background-color: black;
     text-transform: uppercase;
@@ -181,19 +189,120 @@ header .navbar form input[type='search'] {
 
 /* menu section end */
 
+/* menu-info section start */
+
+#menu-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(26, 16, 16);
+}
+
+#menu-info .upper {
+    text-align: center;
+}
+
+#menu-info .upper h1 {
+    color: white;
+}
+
+#menu-info .middle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: start;
+    gap: 30px;
+    margin: 35px 80px;
+}
+
+#menu-info .middle {
+    color: white;
+}
+
+#menu-info .lower {
+    text-align: center;
+}
+
+#menu-info .lower a {
+    color: black;
+    padding: 10px 20px;
+    background-color: white;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+
+/* menu-info section end */
+
+/* discount section start */
+
+#discount {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding: 0px 180px;
+
+}
+
+#discount .upper,
+#discount .lower {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+#discount .upper .left,
+#discount .lower .right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#discount .upper .left img,
+#discount .lower .right img {
+    width: 60%;
+}
+
+#discount .upper .right,
+#discount .lower .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+#discount .upper .right a,
+#discount .lower .left a {
+    color: white;
+    padding: 10px 20px;
+    background-color: black;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+
+/* discount section end */
+
+
 /* custom scrollbar start */
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 10px;
 }
 
-::-webkit-scrollbar-track{
-background-color: black;
+::-webkit-scrollbar-track {
+    background-color: black;
 }
 
-::-webkit-scrollbar-thumb{
-background-clip: content-box;
-background-color: white;
-border-radius: 5px;
-border: 2px solid blue;
+::-webkit-scrollbar-thumb {
+    background-clip: content-box;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid blue;
 }
+
+/* custom scrollbar end */
