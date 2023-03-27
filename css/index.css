@@ -27,6 +27,8 @@ header {
     position: fixed;
     top: 0;
     z-index: 1000;
+    /* background-color: black; */
+    display: none;
 }
 
 
@@ -73,6 +75,7 @@ header .navbar form input[type='search'] {
     width: 100%;
     background-image: url('../images/Home-Background.jpg');
     background-size: cover;
+    position: relative;
 }
 
 #home .left {
@@ -85,17 +88,19 @@ header .navbar form input[type='search'] {
 }
 
 #home .left img {
-    width: 15%;
+    width: 32%;
     margin: 0 0 20px 0;
 }
 
 #home .left h1 {
     color: white;
+    font-size: 50px;
     margin: 0 0 20px 0;
 }
 
 #home .left h3 {
     color: white;
+    font-size: 20px;
     margin: 0 0 20px 0;
 }
 
@@ -106,11 +111,13 @@ header .navbar form input[type='search'] {
     background-color: white;
     text-transform: uppercase;
     border-radius: 20px;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 #home .left p {
     color: white;
-
+    font-size: 18px;
 }
 
 #home .right {
@@ -127,7 +134,7 @@ header .navbar form input[type='search'] {
 }
 
 #home .right .large-image img {
-    width: 60%;
+    width: 70%;
 }
 
 #home .right .small-image {
@@ -139,7 +146,7 @@ header .navbar form input[type='search'] {
     position: absolute;
     bottom: -7%;
     width: 21%;
-    right: 13%;
+    right: 15%;
 }
 
 /* home section end */
@@ -148,10 +155,14 @@ header .navbar form input[type='search'] {
 
 #menu {
     width: 100%;
-    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    margin: 20px 0;
+
 }
 
 #menu .upper {
@@ -159,7 +170,12 @@ header .navbar form input[type='search'] {
 }
 
 #menu .upper h1 {
+    font-size: 30px;
     margin: 0 0 20px 0;
+}
+
+#menu .upper p {
+    font-size: 20px;
 }
 
 #menu .middle {
@@ -175,16 +191,14 @@ header .navbar form input[type='search'] {
     width: 70%;
 }
 
-#menu .lower {
-    text-align: center;
-}
-
 #menu .lower a {
     color: white;
     padding: 10px 20px;
     background-color: black;
     text-transform: uppercase;
     border-radius: 20px;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 /* menu section end */
@@ -192,7 +206,7 @@ header .navbar form input[type='search'] {
 /* menu-info section start */
 
 #menu-info {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     width: 100%;
@@ -238,7 +252,7 @@ header .navbar form input[type='search'] {
 /* discount section start */
 
 #discount {
-    display: flex;
+    display: none;
     flex-direction: column;
     width: 100%;
     height: 100vh;
@@ -292,7 +306,7 @@ header .navbar form input[type='search'] {
 #pizza {
     width: 100%;
     height: 100vh;
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 40px;
     align-items: center;
@@ -349,7 +363,7 @@ header .navbar form input[type='search'] {
 /* pizza-info section start */
 
 #pizza-info {
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 40px;
     height: 70vh;
@@ -395,7 +409,7 @@ header .navbar form input[type='search'] {
     position: relative;
     height: 60vh;
     width: 100%;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 }
@@ -453,7 +467,7 @@ header .navbar form input[type='search'] {
 /* footer start */
 
 footer{
-    display: flex;
+    display: none;
     flex-direction: row;
     gap: 20px;
     width: 100%;
