@@ -1,3 +1,4 @@
+// navigation bar on scroll effect 
 const navigationBar = document.getElementById('navigation-bar');
 
 window.onscroll = () => {
@@ -9,7 +10,7 @@ window.onscroll = () => {
     }
 }
 
-
+// navigation bar on click effect 
 const phoneBar = document.getElementById('phone-bar');
 const phoneNav = document.querySelector('.navbar');
 
@@ -24,6 +25,7 @@ phoneBar.onclick = () => {
     }
 }
 
+// navigation bar links on click effect 
 const navLinks = document.querySelectorAll('header .navbar ul li')
 
 navLinks.forEach((element)=>{
@@ -33,6 +35,7 @@ navLinks.forEach((element)=>{
     }
 })
 
+// right click disable 
 document.oncontextmenu=(element)=>{
     element.preventDefault();
 
