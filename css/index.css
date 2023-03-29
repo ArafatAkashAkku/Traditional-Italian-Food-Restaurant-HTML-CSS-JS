@@ -33,7 +33,7 @@ header {
     align-items: center;
 }
 
-header .logo{
+header .logo {
     margin-left: 30px;
 }
 
@@ -66,7 +66,7 @@ header .navbar nav ul li a {
     color: white;
 }
 
-header .fa-solid{
+header .fa-solid {
     display: none;
 }
 
@@ -175,7 +175,7 @@ header .navbar form input[type='search'] {
     align-items: center;
     gap: 12px;
     position: relative;
-    margin: 20px 0;
+    padding: 20px 0;
 }
 
 #menu .upper {
@@ -223,12 +223,12 @@ header .navbar form input[type='search'] {
 /* menu-info section start */
 
 #menu-info {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 40vh;
     background-color: rgb(26, 16, 16);
+    padding: 30px 0;
 }
 
 #menu-info .upper {
@@ -237,6 +237,7 @@ header .navbar form input[type='search'] {
 
 #menu-info .upper h1 {
     color: white;
+    font-size: 30px;
 }
 
 #menu-info .middle {
@@ -246,10 +247,11 @@ header .navbar form input[type='search'] {
     text-align: start;
     gap: 30px;
     margin: 35px 80px;
+    color: white;
 }
 
-#menu-info .middle {
-    color: white;
+#menu-info .middle p {
+    font-size: 17px;
 }
 
 #menu-info .lower {
@@ -262,6 +264,8 @@ header .navbar form input[type='search'] {
     background-color: white;
     text-transform: uppercase;
     border-radius: 20px;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 /* menu-info section end */
@@ -269,12 +273,10 @@ header .navbar form input[type='search'] {
 /* discount section start */
 
 #discount {
-    display: none;
+    display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
-    padding: 0px 180px;
-
+    padding: 20px 180px;
 }
 
 #discount .upper,
@@ -283,7 +285,6 @@ header .navbar form input[type='search'] {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 50vh;
 }
 
 #discount .upper .left,
@@ -307,6 +308,17 @@ header .navbar form input[type='search'] {
     gap: 35px;
 }
 
+#discount .upper .right h1,
+#discount .lower .left h1 {
+    font-size: 30px;
+}
+
+#discount .upper .right p,
+#discount .lower .left p {
+    font-size: 17px;
+}
+
+
 #discount .upper .right a,
 #discount .lower .left a {
     color: white;
@@ -314,6 +326,8 @@ header .navbar form input[type='search'] {
     background-color: black;
     text-transform: uppercase;
     border-radius: 20px;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 /* discount section end */
@@ -322,8 +336,7 @@ header .navbar form input[type='search'] {
 
 #pizza {
     width: 100%;
-    height: 100vh;
-    display: none;
+    display: flex;
     flex-direction: column;
     gap: 40px;
     align-items: center;
@@ -349,6 +362,14 @@ header .navbar form input[type='search'] {
     margin-top: 34px;
 }
 
+#pizza .upper h1 {
+    font-size: 30px;
+}
+
+#pizza .upper p {
+    font-size: 17px;
+}
+
 #pizza .middle {
     width: 10%;
     height: 10px;
@@ -358,7 +379,6 @@ header .navbar form input[type='search'] {
 #pizza .lower {
     text-align: end;
     position: relative;
-    height: 50vh;
 }
 
 #pizza .lower .image-one {
@@ -370,9 +390,8 @@ header .navbar form input[type='search'] {
 #pizza .lower .image-two {
     width: 27%;
     position: absolute;
-    position: absolute;
-    bottom: -57%;
-    left: 39%;
+    bottom: 0%;
+    left: 41%;
 }
 
 /* pizza section end */
@@ -380,41 +399,50 @@ header .navbar form input[type='search'] {
 /* pizza-info section start */
 
 #pizza-info {
-    display: none;
+    display: flex;
     flex-direction: column;
-    gap: 40px;
-    height: 70vh;
     width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 80px;
+    padding: 20px 60px;
+}
+
+#pizza-info h1 {
+    font-size: 30px;
+}
+
+#pizza-info p {
+    font-size: 17px;
 }
 
 #pizza-info .upper {
     display: flex;
-    flex-direction: row;
-    gap: 20px;
-    margin-top: 50px;
+    margin-top: 40px;
     align-items: center;
-    justify-content: center;
-    height: 35vh;
     width: 100%;
+}
+
+#pizza-info .upper .left,
+#pizza-info .upper .middle,
+#pizza-info .upper .right {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 #pizza-info .lower {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    align-items: center;
     justify-content: center;
-    height: 35vh;
     width: 100%;
+    text-align: center;
+    margin-top: 40px;
     text-align: center;
 }
 
 #pizza-info .lower a {
     color: black;
     font-weight: bold;
+    font-size: 15px;
 }
 
 /* pizza-info section end */
@@ -424,35 +452,32 @@ header .navbar form input[type='search'] {
 #contact {
     background-color: rgb(26, 16, 16);
     position: relative;
-    height: 60vh;
+    /* height: 60vh; */
     width: 100%;
-    display: none;
-    align-items: center;
+    display: flex;
+    /* align-items: center; */
     justify-content: center;
+    padding: 30px 0;
 }
 
 #contact .contact-info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     gap: 45px;
     text-align: center;
-}
-
-#contact img {
-    position: absolute;
-    top: -40%;
-    width: 85%;
 }
 
 #contact .contact-info h1 {
     color: white;
     text-transform: uppercase;
+    font-size: 30px;
 }
 
 #contact .contact-info p {
     color: white;
+    font-size: 17px;
 }
 
 #contact .contact-info form {
@@ -483,61 +508,83 @@ header .navbar form input[type='search'] {
 
 /* footer start */
 
-footer{
-    display: none;
-    flex-direction: row;
-    gap: 20px;
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     width: 100%;
-    height: 40vh;
-    position: relative;
+}
+
+footer h1{
+    font-size: 30px;
+}
+
+footer p{
+    font-size: 17px;
+}
+
+footer .upper {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
     padding: 20px 80px;
 }
 
-footer .left{
-    width: 50%;
+footer .upper .left {
     width: 50%;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-footer .right{
+footer .upper .right {
     width: 50%;
     display: flex;
     flex-direction: row;
     gap: 40px;
-    margin-left: 35px;
 }
 
-footer .left ul{
-    display:flex;
-    flex-direction:row;
-    gap:20px;
+footer .upper .left ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 
-footer .left ul li a{
+footer .upper .left ul li a {
     padding: 8px 10px;
     border-radius: 50%;
     color: white;
 }
 
-footer .right .footer-link{
+footer .upper .right .footer-link {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-footer .right .footer-link ul{
-    display:flex;
-    flex-direction:column;
-    gap:20px;
+footer .upper .right .footer-link ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-footer .right .footer-link ul li a{
+footer .upper .right .footer-link ul li a {
     color: black;
 }
 
+footer .lower {
+    background-color: black;
+    text-align: center;
+}
 
+footer .lower p{
+    color: white;
+}
+
+footer .lower a{
+    font-size: 20px;
+    color: yellow;
+}
 
 /* footer end */
 

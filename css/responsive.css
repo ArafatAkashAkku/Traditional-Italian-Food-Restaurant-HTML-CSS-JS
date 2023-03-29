@@ -1,3 +1,26 @@
+@media screen and (max-width:1350px) {
+
+    #pizza-info .upper {
+        gap: 20px;
+    }
+
+    #contact {
+        padding: 20px 30px;
+    }
+
+    #contact .contact-info form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #contact .contact-info form a {
+        position: static;
+    }
+    
+}
+
 @media screen and (max-width:1025px) {
 
     header .fa-solid {
@@ -20,13 +43,13 @@
         right: -100%;
         transition: 0.5s;
     }
-    
-    header .navbar.active{
+
+    header .navbar.active {
         right: 0;
 
     }
 
-    header .navbar nav{
+    header .navbar nav {
         background-color: black;
     }
 
@@ -37,7 +60,7 @@
         gap: 40px;
         padding: 80px 0;
     }
-    
+
     header .navbar nav ul li a {
         color: black;
         background-color: white;
@@ -46,6 +69,15 @@
 
     header .navbar form input[type='search'] {
         display: none;
+    }
+
+    #pizza .leaf-two-side {
+        display: none;
+    }
+
+    #pizza .middle {
+        width: 20%;
+        height: 10px;
     }
 
 }
@@ -107,6 +139,112 @@
         font-size: 18px;
     }
 
+    #menu-info .middle {
+        flex-direction: column;
+    }
+
+    #menu-info .middle p {
+        font-size: 15px;
+    }
+
+    #discount {
+        padding: 20px 30px;
+        gap: 30px;
+    }
+
+    #discount .upper {
+        flex-direction: column;
+    }
+
+    #discount .lower {
+        flex-direction: column-reverse;
+    }
+
+    #discount .upper .right,
+    #discount .lower .left {
+        width: 100%;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #discount .upper .right h1,
+    #discount .lower .left h1 {
+        font-size: 20px;
+    }
+
+    #discount .upper .right p,
+    #discount .lower .left p {
+        font-size: 15px;
+    }
+
+    #pizza {
+        gap: 20px;
+        padding: 0px 30px;
+    }
+
+    #pizza .upper h1 {
+        font-size: 20px;
+    }
+
+    #pizza .upper p {
+        font-size: 15px;
+    }
+
+    #pizza-info {
+        padding: 20px 30px;
+    }
+
+    #pizza-info h1 {
+        font-size: 20px;
+    }
+
+    #pizza-info p {
+        font-size: 15px;
+    }
+
+    #pizza-info .upper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #contact .contact-info h1 {
+        font-size: 20px;
+    }
+
+    #contact .contact-info p {
+        font-size: 15px;
+    }
+
+    #contact .contact-info form input[type="email"] {
+        padding: 7px 10px;
+    }
+
+    footer h1{
+        font-size: 20px;
+    }
+    
+    footer p{
+        font-size: 15px;
+    }
+
+    footer .upper{
+        flex-direction: column;
+        padding: 20px 30px;
+        align-items: center;
+    }
+
+    footer .upper .left{
+        width: 100%;
+    }
+
+    footer .upper .right{
+        width: 100%;
+    }
+
+    footer .lower a{
+        font-size: 17px;
+    }
+
 }
 
 @media screen and (max-width:700px) {
@@ -154,6 +292,18 @@
         width: 100%;
     }
 
+    #menu-info .middle {
+        margin: 30px 50px;
+    }
+
+    #contact .contact-info form input[type="email"] {
+        width: 100%;
+    }
+
+    footer .upper .right{
+        flex-direction: column;
+    }
+
 }
 
 @media screen and (max-width:285px) {
@@ -178,6 +328,19 @@
 
     #menu .middle p {
         font-size: 13px;
+    }
+
+    #menu-info .middle {
+        margin: 25px 20px;
+    }
+
+    #discount {
+        padding: 20px 10px;
+    }
+
+    #discount .upper .left img,
+    #discount .lower .right img {
+        width: 100%;
     }
 
 }
