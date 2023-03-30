@@ -81,6 +81,25 @@ header .navbar form input[type='search'] {
 
 /* header end */
 
+/* progress bar start  */
+
+.progress{
+    height: 5px;
+    width: 100%;
+    position: fixed;
+    top: 10vh;
+    z-index: 1;
+}
+
+.highlight{
+    transition: width 0.5s linear;
+    width: 0%;
+    background-color: red;
+    height: 100%;
+}
+
+/* progress bar end  */
+
 /* home section start */
 
 #home {

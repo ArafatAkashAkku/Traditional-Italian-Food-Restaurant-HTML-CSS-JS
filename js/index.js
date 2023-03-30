@@ -1,5 +1,8 @@
-// navigation bar on scroll effect 
+// navigation bar on scroll effect and scroll progress bar
+
 const navigationBar = document.getElementById('navigation-bar');
+const container = document.querySelector("body");
+const highlight = document.getElementById("bar-highlight");
 
 window.onscroll = () => {
     if (scrollY > 100) {
@@ -8,6 +11,13 @@ window.onscroll = () => {
     else {
         navigationBar.style.backgroundColor = "transparent";
     }
+
+    let cheight = container.offsetHeight - window.innerHeight;
+    let cpos = container.getBoundingClientRect();
+    let diff = cheight + cpos.top;
+    let progress = diff/cheight*100;
+    let csswidth = Math.floor(100-progress);
+    highlight.style.width=csswidth + "%";
 }
 
 // navigation bar on click effect 
@@ -26,7 +36,7 @@ phoneBar.onclick = () => {
 }
 
 // navigation bar links on click effect 
-const navLinks = document.querySelectorAll('header .navbar ul li')
+const navLinks = document.querySelectorAll('header .navbar ul li a')
 
 navLinks.forEach((element)=>{
     element.onclick=()=>{
@@ -38,5 +48,4 @@ navLinks.forEach((element)=>{
 // right click disable 
 document.oncontextmenu=(element)=>{
     element.preventDefault();
-
 }
