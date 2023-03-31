@@ -1,0 +1,17 @@
+{
+    "lang": "en-us",
+    "name": "Traditional Italian Food Restaurant",
+    "short_name": "Italian Restaurant",
+    "description": "A restaurant that provides all the traditional italian foods",
+    "start_url": "/",
+    "background_color": "#2f3d58",
+    "theme_color": "#2f3d58",
+    "orientation": "any",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/Pizza512.png",
+            "sizes": "512x512"
+        }
+    ]
+}

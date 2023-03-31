@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/responsive.css">
     <!-- font awesome cdn 6.3.0 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <!-- manifest link  -->
+    <link rel="manifest" href="manifest.json">
     <title>Traditional Italian Food Restaurant</title>
 </head>
 
@@ -34,8 +36,8 @@
             </nav>
 
             <form action="#">
-                <input type="search" name="" id="" placeholder="Search here...">
-
+                <label for="search"></label>
+                <input type="search" name="search-bar" id="search-bar" placeholder="Search here...">
             </form>
         </div>
         <i id="phone-bar" class="fa-solid fa-bars"></i>
@@ -59,7 +61,7 @@
                 <img src="images/Logo.png" alt="Your Logo">
                 <h1>Italian Food</h1>
                 <h3>Lorem, ipsum dolor.</h3>
-                <a href="#">Read more</a>
+                <a>Read more</a>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut excepturi dignissimos libero, corporis
                     ratione molestiae aliquam id, minima est, rem provident fuga ea aspernatur quisquam nesciunt soluta?
                     Commodi, sapiente rerum.</p>
@@ -103,7 +105,7 @@
                 </div>
             </div>
 
-            <div class="lower"><a href="#">Show more</a></div>
+            <div class="lower"><a>Show more</a></div>
 
         </section>
         <!-- menu section end -->
@@ -131,7 +133,7 @@
             </div>
 
             <div class="lower">
-                <a href="#">More info</a>
+                <a>More info</a>
             </div>
 
 
@@ -150,7 +152,7 @@
                     <p>Lorem ipsum dolor Lorem ipsum dolor sit amet. sit amet consectetur adipisicing elit. Eaque, ea
                         corporis quaerat ut ducimus
                         quas obcaecati. Qui quod magni recusandae!</p>
-                    <div><a href="#">Read more</a></div>
+                    <div><a>Read more</a></div>
                 </div>
             </div>
 
@@ -159,7 +161,7 @@
                     <h1>January's promo: <br> Buy 1 Get 1 Free!</h1>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque soluta, beatae omnis nemo fugit
                         assumenda numquam nesciunt adipisci? Nobis, maxime.</p>
-                    <div><a href="#">Read more</a></div>
+                    <div><a>Read more</a></div>
                 </div>
                 <div class="right">
                     <img src="images/Discount-Picture-2.png" alt="Discount-Picture-2">
@@ -213,7 +215,7 @@
                     voluptate alias aut <br> corporis ad amet eum totam dolores! Corporis voluptatum necessitatibus
                     mollitia sed quis fuga ipsum, ut deleniti <br> pariatur doloribus sint quos soluta obcaecati sunt!.
                 </p>
-                <a href="#">Lorem, ipsum.</a>
+                <a>Lorem, ipsum.</a>
             </div>
 
         </section>
@@ -229,8 +231,9 @@
                     numquam quas aspernatur ratione!
                 </p>
                 <form action="#">
-                    <input type="email" name="" id="">
-                    <a href="#">Subscribe</a>
+                    <label for="email-id"></label>
+                    <input type="email" name="email-id" id="email-id" placeholder="Enter email...">
+                    <a>Subscribe</a>
                 </form>
             </div>
 
@@ -250,42 +253,42 @@
                     voluptate veritatis! Soluta non, dolore sit molestiae velit ea esse necessitatibus est voluptatem?
                 </p>
                 <ul>
-                    <li><a style="background-color: red;" href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a style="background-color: blue;" href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a style="background-color: rgb(38, 38, 129);" href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <li><a><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a><i class="fa-brands fa-twitter"></i></a>
                     </li>
-                    <li><a style="background-color: green;" href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li><a><i class="fa-brands fa-whatsapp"></i></a></li>
                 </ul>
             </div>
             <div class="right">
                 <div class="footer-link">
                     <h1>About</h1>
                     <ul>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Our Team</a></li>
-                        <li><a href="#">Brand Guidelines</a></li>
-                        <li><a href="#">Terms & Condition</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a>History</a></li>
+                        <li><a>Our Team</a></li>
+                        <li><a>Brand Guidelines</a></li>
+                        <li><a>Terms & Condition</a></li>
+                        <li><a>Privacy Policy</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-link">
                     <h1>Services</h1>
                     <ul>
-                        <li><a href="#">How to Order</a></li>
-                        <li><a href="#">Our Product</a></li>
-                        <li><a href="#">Order Status</a></li>
-                        <li><a href="#">Promo</a></li>
-                        <li><a href="#">Payment Method</a></li>
+                        <li><a>How to Order</a></li>
+                        <li><a>Our Product</a></li>
+                        <li><a>Order Status</a></li>
+                        <li><a>Promo</a></li>
+                        <li><a>Payment Method</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-link">
                     <h1>Others</h1>
                     <ul>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">Privacy</a></li>
+                        <li><a>Contact Us</a></li>
+                        <li><a>Help</a></li>
+                        <li><a>Privacy</a></li>
                     </ul>
                 </div>
             </div>
@@ -298,6 +301,11 @@
     <!-- footer end -->
 
     <script src="js/index.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js', { scope: '/' });
+        }
+    </script>
 </body>
 
 </html>

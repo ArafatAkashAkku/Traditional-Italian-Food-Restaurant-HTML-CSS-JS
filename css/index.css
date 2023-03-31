@@ -64,6 +64,7 @@ header .navbar nav ul li a {
     border-radius: 10px;
     text-transform: uppercase;
     color: white;
+    cursor: pointer;
 }
 
 header .fa-solid {
@@ -146,6 +147,7 @@ header .navbar form input[type='search'] {
     border-radius: 20px;
     font-weight: bold;
     font-size: 15px;
+    cursor: pointer;
 }
 
 #home .left p {
@@ -235,6 +237,7 @@ header .navbar form input[type='search'] {
     border-radius: 20px;
     font-weight: bold;
     font-size: 15px;
+    cursor: pointer;
 }
 
 /* menu section end */
@@ -285,6 +288,7 @@ header .navbar form input[type='search'] {
     border-radius: 20px;
     font-weight: bold;
     font-size: 15px;
+    cursor: pointer;
 }
 
 /* menu-info section end */
@@ -347,6 +351,7 @@ header .navbar form input[type='search'] {
     border-radius: 20px;
     font-weight: bold;
     font-size: 15px;
+    cursor: pointer;
 }
 
 /* discount section end */
@@ -462,6 +467,7 @@ header .navbar form input[type='search'] {
     color: black;
     font-weight: bold;
     font-size: 15px;
+    cursor: pointer;
 }
 
 /* pizza-info section end */
@@ -471,10 +477,8 @@ header .navbar form input[type='search'] {
 #contact {
     background-color: rgb(26, 16, 16);
     position: relative;
-    /* height: 60vh; */
     width: 100%;
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     padding: 30px 0;
 }
@@ -482,8 +486,6 @@ header .navbar form input[type='search'] {
 #contact .contact-info {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
     gap: 45px;
     text-align: center;
 }
@@ -521,6 +523,7 @@ header .navbar form input[type='search'] {
     text-transform: uppercase;
     border-radius: 20px;
     right: 34%;
+    cursor: pointer;
 }
 
 /* contact section end */
@@ -573,6 +576,27 @@ footer .upper .left ul li a {
     padding: 8px 10px;
     border-radius: 50%;
     color: white;
+    cursor: pointer;
+}
+
+footer .upper .left ul li:nth-child(1) a {
+    background-color: red;
+    cursor: pointer;
+}
+
+footer .upper .left ul li:nth-child(2) a {
+    background-color: blue;
+    cursor: pointer;
+}
+
+footer .upper .left ul li:nth-child(3) a {
+    background-color: rgb(38, 38, 129);
+    cursor: pointer;
+}
+
+footer .upper .left ul li:nth-child(4) a {
+    background-color: green;
+    cursor: pointer;
 }
 
 footer .upper .right .footer-link {
@@ -589,6 +613,7 @@ footer .upper .right .footer-link ul {
 
 footer .upper .right .footer-link ul li a {
     color: black;
+    cursor: pointer;
 }
 
 footer .lower {
@@ -603,6 +628,7 @@ footer .lower p{
 footer .lower a{
     font-size: 20px;
     color: yellow;
+    cursor: pointer;
 }
 
 /* footer end */
