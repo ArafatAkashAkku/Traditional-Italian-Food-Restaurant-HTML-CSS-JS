@@ -1,3 +1,7 @@
+For Normal Not Fot Github
+
+manifest.json
+
 {
     "lang": "en-us",
     "name": "Traditional Italian Food Restaurant",

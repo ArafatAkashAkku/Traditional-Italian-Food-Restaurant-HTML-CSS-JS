@@ -5,11 +5,11 @@ self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE_NAME);
     cache.addAll([
-      '/',
-      '/images/',
-      '/js/index.js',
-      '/css/index.css',
-      '/css/responsive.css'
+      '/Traditional-Italian-Food-Restaurant-HTML-CSS-JS/',
+      '/Traditional-Italian-Food-Restaurant-HTML-CSS-JS/images/',
+      '/Traditional-Italian-Food-Restaurant-HTML-CSS-JS/js/index.js',
+      '/Traditional-Italian-Food-Restaurant-HTML-CSS-JS/css/index.css',
+      '/Traditional-Italian-Food-Restaurant-HTML-CSS-JS/css/responsive.css'
     ]);
   })());
 });
