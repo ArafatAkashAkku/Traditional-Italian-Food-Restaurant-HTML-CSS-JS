@@ -49,3 +49,34 @@ navLinks.forEach((element)=>{
 document.oncontextmenu=(element)=>{
     element.preventDefault();
 }
+
+// cookie set 
+
+const cookieBox = document.querySelector(".cookie");
+const acceptBtn = document.querySelector(".cookie .right .accept");
+const rejectBtn = document.querySelector(".cookie .right .reject");
+
+setTimeout(() => {
+    cookieBox.style.visibility = "visible"
+}, 5000);
+
+rejectBtn.onclick = () => {
+    cookieBox.style.visibility = "hidden";
+    setTimeout(() => {
+        cookieBox.style.visibility = "visible"
+    }, 60000);
+}
+
+acceptBtn.onclick = () => {
+    document.cookie = "fname=Arafat; max-age=" + 60 * 60 * 24 * 30;
+    document.cookie = "lname=Akash; max-age=" + 60 * 60 * 24 * 30;
+    if (document.cookie) {
+        cookieBox.classList.add("hide");
+    }
+    else {
+        alert("Cookie can't be set");
+    }
+}
+
+let check = document.cookie.indexOf("fname=Arafat");
+check != -1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
