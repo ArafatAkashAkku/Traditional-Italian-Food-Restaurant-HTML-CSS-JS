@@ -1,5 +1,4 @@
 // navigation bar on scroll effect and scroll progress bar
-
 const navigationBar = document.getElementById('navigation-bar');
 const container = document.querySelector("body");
 const highlight = document.getElementById("bar-highlight");
@@ -51,7 +50,6 @@ document.oncontextmenu=(element)=>{
 }
 
 // cookie set 
-
 const cookieBox = document.querySelector(".cookie");
 const acceptBtn = document.querySelector(".cookie .right .accept");
 const rejectBtn = document.querySelector(".cookie .right .reject");

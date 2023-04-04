@@ -42,6 +42,7 @@
         top: 100%;
         right: -100%;
         transition: 0.5s;
+        z-index: 50000;
     }
 
     header .navbar.active {
@@ -51,14 +52,15 @@
 
     header .navbar nav {
         background-color: black;
+        height: 90vh;
     }
 
     header .navbar nav ul {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 40px;
-        padding: 80px 0;
+        gap: 60px;
+        height: 100%;
     }
 
     header .navbar nav ul li a {
