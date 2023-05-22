@@ -95,7 +95,7 @@ header .navbar form input[type='search'] {
 .highlight{
     transition: width 0.5s linear;
     width: 0%;
-    background-color: red;
+    background-color: green;
     height: 100%;
 }
 
