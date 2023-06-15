@@ -84,7 +84,7 @@ header .navbar form input[type='search'] {
 
 /* progress bar start  */
 
-.progress{
+.progress {
     height: 5px;
     width: 100%;
     position: fixed;
@@ -92,7 +92,7 @@ header .navbar form input[type='search'] {
     z-index: 1;
 }
 
-.highlight{
+.highlight {
     transition: width 0.5s linear;
     width: 0%;
     background-color: green;
@@ -118,7 +118,7 @@ header .navbar form input[type='search'] {
     visibility: hidden;
 }
 
-.cookie.hide{
+.cookie.hide {
     display: none;
 }
 
@@ -616,11 +616,11 @@ footer {
     width: 100%;
 }
 
-footer h1{
+footer h1 {
     font-size: 30px;
 }
 
-footer p{
+footer p {
     font-size: 17px;
 }
 
@@ -700,11 +700,11 @@ footer .lower {
     text-align: center;
 }
 
-footer .lower p{
+footer .lower p {
     color: white;
 }
 
-footer .lower a{
+footer .lower a {
     font-size: 20px;
     color: yellow;
     cursor: pointer;
@@ -730,3 +730,33 @@ footer .lower a{
 }
 
 /* custom scrollbar end */
+
+/* pwa update message start */
+
+#snackbar {
+    display: none;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    bottom: 30px;
+}
+
+#snackbar.show {
+    display: block;
+}
+
+#snackbar p {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+}
+
+#reload {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* pwa update message end */
